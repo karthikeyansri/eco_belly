@@ -1,1 +1,1 @@
-web: gunicorn belly_eco_system.app:app
+web: gunicorn code.belly_eco_system.app:app
