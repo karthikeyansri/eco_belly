@@ -29,11 +29,25 @@ function buildMetadata(sample) {
         });
 
         // BONUS: Build the Gauge Chart
-        buildGauge(wFreq);
+        // buildGauge(wFreq);
+        buildGaugeUsingJustGage("gauge", wFreq);
     });
 
 
 }
+
+function buildGaugeUsingJustGage(id, wFreq) {
+
+    new JustGage({
+        id: id,
+        value: wFreq,
+        min: 0,
+        max: 10,
+        title: "Scrubs Per week"
+    });
+
+}
+
 
 function buildGauge(wFreq) {
 
